@@ -18,3 +18,12 @@
         }
     ]
 }
+aws secretsmanager create-secret --name ramesh4 \
+    --description "This is the password for dev-db admin user1" \
+    --secret-string "MySecretSecureString$123" \
+    --kms-key-id 45454545-3f66-4848-afaf-a8a8a8a8a8a8
+{
+  "ARN": "arn:aws:secretsmanager:us-east-1:111111111111:secret:ramesh4-vavaKy",
+  "Name": "ramesh4",
+  "VersionId": "11111111-8686-4025-957a-222222222222"
+}
